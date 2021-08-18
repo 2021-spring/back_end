@@ -1,0 +1,11 @@
+node_modules
+src/node_modules
+functions
+npm-debug.log
+ui-debug.log
+
+src/npm-debug.log
+src/firebase-debug.log
+firebase-debug.log
+etc
+run

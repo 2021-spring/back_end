@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "easywarehouse-1610a",
+  "private_key_id": "d800a3a6bbd9106cffa8c617802694d096db4bef",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwewpQtg6zNPai\nt3e4LemCrB4ecRD9t9Br7Zcza+p/bqkKxkPU6bE1ftJ3/Jd7+CDD/ZaklIxkUkxj\nPNirMgj93zwvzS0VSzGo1nWLuzNjoyFxbu606Lvp/WHSkJ93eR/5j14p8+iT/0Ge\nJXT6oIreuDFyB6VP8sq8biR7IVwrytV6fR/PpU6nwaI6jUzr/xPmSxN6TnTqpqgp\n9UnDpZcR9pzKQGRyl0Y+/qcpH8SdsgxZc/RX0RawKoHJDROuXknep35Cn+Tsu1ff\nuFW8T2RsN30V7hGjIoomdBraqHOSjT5Z3Vkv4rmwNH4wiDfqeq+lciy7T9akTD69\nP+WZDD5FAgMBAAECggEAAzzKmGbyl5aD5MHFXDdZZoiGR+wukdz2oZg68xpKc7qB\ntt0ivuvnkJHqRgG3/LH1VesXwZ6pAakh1hs2ZVOWZyPafI0Aw/h8aXq/rsfJHk2O\njkBo+CAh3F3F1uFIz54E+GTJJy9eh6KB32cUAYoC6imKXKtnvLL5RaImoKygvnvi\n9ywhaqMl2WJ6unlOnnp6+jjMDeI/O5kSN1RqzVEt7CVWCTFpybpOFCv6hWjHPe7G\ntBdy9CO0k/9huHFgSUt2FS2eMyMtvlmrJ6fEAA5O2vLuAY9T17X1CnXFpFo9PIV0\nK6WOSQygYxkHCzgPpnmGd+foL9814r1ZEu86AlnAQQKBgQDyr9fptdlut5QoKyeG\nU5Kq5gKn668OWwmTQvUndr2NjMiIR6gP80e3NqLdA0z1fU65ialnat5Lyop0ZY8t\nWj+m+51d7REOF1rDZ6jFWCAJRpuUDeXS1Fxwbd9z1CHK6/o8Q7EVj911djeKKPDx\nXmdqwE2hjEYY+rmf+87fW9SuQQKBgQC6KW8NzJgU2Gs0HwpoQg66gwTqG6CZpRvD\nh4ZBID9Xpql9bV2eFtjIXr6MyxpgP9ha4MsgXRPbhA6ExonvV4byY1fEStSnV9Fv\nFVRcohVKYHpUWjT7dYs5Tl3M2RcCWNAUUwYcNbtkVPFD09NZz2DXrLBDC9G80j8i\n7XRxfP0XBQKBgByobSu5AKsVXJZ9uhYfqlMqBChGKY7daz0LjB2T5QBhHpERPSRd\nCxv0hLjqmdznZjN8sRd4RDXY/g6Oq6CkZp3WWpfr1ba/RUWL6R8cr/PIdbi/B2Ol\nFiFkqB1qcG8g/JS/PZsZOQKU6iwTd5hZGIc/nCs2gFSUzvS4bI5trqjBAoGBAJ00\nhhqCDl90DruaBuDZ/7QTFiBYKjv1SMfKd14hzDvJetF3fJoWswQptgIRNXnYEG1V\n7VKsJyu1jckkG7EpGcUwjRovEvsp1qtWuMHtAcuoQ0VeU+WRcnt3KRDmtl59/2Fa\nZwuFeHSWopLjm1P5Is+efc5webJZXYWyPiXkJZm9AoGBAKfqLJFnpLiGyX5hsTDh\nPrYL+EyBqa33x57YfIxoNkn3UAgJUQwZVdXLEcySQFWgxTuxWuIGEeV8lEgqCDwX\nGC6gVnr5H+Luvm+ic07qTr+OL7WUaWtUE/FfHjUucemA4izhcil/8awncqzmIly0\nCsPPf8ogp+989g2lZAYw+EWy\n-----END PRIVATE KEY-----\n",
+  "client_email": "easywarehouse-1610a@appspot.gserviceaccount.com",
+  "client_id": "",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/easywarehouse-1610a%40appspot.gserviceaccount.com"
+}
