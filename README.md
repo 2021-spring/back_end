@@ -1,11 +1,8 @@
-# warehouse_system
-easygo warehouse system to manage doctor/nurse/warehouse and facilitate collabration
+mac or linux
 
-## add new firebase project
-firebase use --add
+npm run debug
 
-## build and deploy devemopment server
-npm run deploy-dev
+windows
 
-## build and deploy core server
-npm run deploy-core
+$env:GOOGLE_APPLICATION_CREDENTIALS=$PWD/config/easywarehouse-1610a.json
+firebase -P development emulators:start --inspect-functions
