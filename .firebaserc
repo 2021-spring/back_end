@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "easywarehouse-1610a",
-    "core": "easygo-core",
-    "development": "easywarehouse-1610a",
-    "prod": "viteusa-prod"
+    "default": "test123-6f5f9"
   }
 }
