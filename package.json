@@ -18,7 +18,7 @@
     "release-to-prod-be-Careful": "npm run package-functions && firebase deploy -P prod --only functions",
     "firebase-prepare": "npm install -g firebase-tools && firebase login",
     "babel-for-debug": "babel -s true src --out-dir functions --copy-files --ignore node_modules,test,src/node_modules",
-    "emulator": "export GOOGLE_APPLICATION_CREDENTIALS=$PWD/config/easywarehouse-1610a.json && firebase -P development emulators:start --inspect-functions",
+    "emulator": "export GOOGLE_APPLICATION_CREDENTIALS=$PWD/config/easywarehouse-1610a.json && firebase emulators:start --inspect-functions",
     "debug": "npm run babel-for-debug && npm run emulator"
   },
   "dependencies": {
