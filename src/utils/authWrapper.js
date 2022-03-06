@@ -29,11 +29,7 @@ const errorCodeSet = new Set([
  */
 export default function authWrapper(appContext, func, validateFunc) {
   return functions.https.onCall((data, context) => {
-    if (typeof validateFunc !== 'function' && process.env.NODE_ENV !== 'test' && func.name !== 'logUiEvents' && data.overrideKey !== '20180601' && !context.auth) {
-      // Throwing an HttpsError so that the client gets the error details.
-      logger.error('The function must be called while authenticated.', data)
-      throw new functions.https.HttpsError('failed-precondition', 'The function must be called while authenticated.')
-    } else if (typeof validateFunc === 'function') {
+    if (typeof validateFunc === 'function') {
       let validation = validateFunc(data)
       if (validation !== true) {
         throw new functions.https.HttpsError('failed-validation', validation)
