@@ -7,5 +7,7 @@ ui-debug.log
 src/npm-debug.log
 src/firebase-debug.log
 firebase-debug.log
+firestore-debug.log
+pubsub-debug.log
 etc
 run
