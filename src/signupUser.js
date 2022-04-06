@@ -78,28 +78,7 @@ export default function signupUserFunc(appContext) {
   return functions.https.onCall(async (data, context) => {
     let {admin, db, dbAccessor} = appContext
     let {email, password, phoneNumber, referral = '', name, role} = data
-    if (data.overrideKey !== 'lkjwnlks23432lksdf$%^$' && !context.auth) {
-      // Throwing an HttpsError so that the client gets the error details.
-      throw new functions.https.HttpsError('unauthenticated', 'Only signed in user can perform this operation')
-    }
-
     let codeDocs
-
-    if (role !== 1) {
-      let roleType = ['tenant', 'user', 'warehouse'][role]
-      codeDocs = await dbAccessor.queryWithPredicates([{field: 'code', compare: '==', value: referral}], 'sysAdmin', 'general', 'codes')
-      let isAllowed = codeDocs.size === 1
-    
-      if (!isAllowed) {
-        throw new functions.https.HttpsError('invalid-argument', 'Invalid referral code')
-      } else { 
-        let { type } = codeDocs.docs[0].data()
-        if (type !== roleType) {
-          let displayType = roleType === 'tenant' ? 'organization' : roleType
-          throw new functions.https.HttpsError('invalid-argument', `Referral code cannot be used for ${displayType}.`)
-        }
-      }
-    }
 
     if (!email || !password) {
       throw new functions.https.HttpsError('invalid-argument', 'email and password are required to register a new user')

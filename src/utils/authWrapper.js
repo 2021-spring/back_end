@@ -29,6 +29,7 @@ const errorCodeSet = new Set([
  */
 export default function authWrapper(appContext, func, validateFunc) {
   return functions.https.onCall((data, context) => {
+    console.log({data})
     if (typeof validateFunc === 'function') {
       let validation = validateFunc(data)
       if (validation !== true) {
