@@ -79,6 +79,7 @@ export default function signupUserFunc(appContext) {
     let {admin, db, dbAccessor, auth} = appContext
     let {email, password, phoneNumber, referral = '', name, role} = data
     let codeDocs
+    logger.log('Start signing up user with data: ', {data})
 
     if (!email || !password) {
       throw new functions.https.HttpsError('invalid-argument', 'email and password are required to register a new user')
