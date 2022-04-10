@@ -9,5 +9,6 @@ src/firebase-debug.log
 firebase-debug.log
 firestore-debug.log
 pubsub-debug.log
+localDB
 etc
 run
