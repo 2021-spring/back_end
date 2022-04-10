@@ -1,6 +1,7 @@
 import 'babel-polyfill'
-import { https, logger, pubsub } from 'firebase-functions'
+import { logger, pubsub } from 'firebase-functions'
 import admin from 'firebase-admin'
+const firestore = require('firebase-admin/firestore');
 import dbAccessor from './utils/dbAccessor'
 import authWrapper from './utils/authWrapper'
 import {Model} from './models'
@@ -59,10 +60,10 @@ import acceptSkuRequest from './warehouse/acceptSkuRequest'
 import processShipment from './user/processShipment'
 import processEei from './processEei'
 
-// this check is for unit testing
-!admin.apps.length && admin.initializeApp()
-let db = admin.firestore()
-let firebase = admin.database()
+const app = admin.initializeApp()
+let db = firestore.getFirestore(app)
+let firebase = admin.database(app)
+let auth = admin.auth(app)
 const settings = { timestampsInSnapshots: true }
 let dbFieldValue = admin.firestore.FieldValue
 db.settings(settings);
@@ -112,7 +113,7 @@ global.logger = {
 
 
 
-let appContext = { admin, db, dbAccessor, firebase, bucket, dbFieldValue }
+let appContext = { admin, db, dbAccessor, firebase, bucket, dbFieldValue, auth }
 
 //
 // callable functions

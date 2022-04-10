@@ -1,0 +1,312 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "active",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tenantKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "announcements",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "broadcasterKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "endDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "announcements",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "msgType",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "broadcasterType",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "endDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "archivedShipments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tenantKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "archives",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tenantKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "packages",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "isAbnormal",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "organizationKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "packages",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "isAddedToInventory",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "organizationKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "packages",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "organizationKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "packages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isAbnormal",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "packages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isAddedToInventory",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "packages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isAddedToInventory",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "organizationKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "upc",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "paymentRequest",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tenantKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "reportLost",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tenantKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "shipments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tenantKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isExpedited",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "shipments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "userKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isExpedited",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "systemTransactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clientKey",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "transferTransactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "involvedKeys",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "isPending",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createTime",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "billings",
+      "fieldPath": "tenantKey",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION"
+        },
+        {
+          "order": "DESCENDING",
+          "queryScope": "COLLECTION"
+        },
+        {
+          "arrayConfig": "CONTAINS",
+          "queryScope": "COLLECTION"
+        },
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}

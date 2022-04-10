@@ -76,7 +76,7 @@ function provisionRegularUser(db, uid, data) {
 
 export default function signupUserFunc(appContext) {
   return functions.https.onCall(async (data, context) => {
-    let {admin, db, dbAccessor} = appContext
+    let {admin, db, dbAccessor, auth} = appContext
     let {email, password, phoneNumber, referral = '', name, role} = data
     let codeDocs
 
@@ -93,7 +93,7 @@ export default function signupUserFunc(appContext) {
     phoneNumber && (userData.phoneNumber = phoneNumber)
     name && (userData.displayName = name)
     let uid = null
-    return admin.auth().createUser(userData)
+    return auth.createUser(userData)
             .then(async userRecord => {
               uid = userRecord.uid
               let provision = null
@@ -123,7 +123,7 @@ export default function signupUserFunc(appContext) {
             .catch((error) => {
               logger.log("---------Error creating new user:", error);
               if (uid) {
-                return admin.auth().deleteUser(uid)
+                return auth.deleteUser(uid)
                         .catch(errorRollback => {
                           logger.log("---------fail to roll back new user:", errorRollback);
                           throw new functions.https.HttpsError('internal', 'failed to create new user, and cannot roll back new firebase user. ' + error ? error.message : '')
